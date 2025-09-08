@@ -1,19 +1,10 @@
-<div align="center">
-<svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
-            <stop offset="50%" style="stop-color:#DB2777;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
-        </linearGradient>
-    </defs>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50"   fill="url(#grad1)">
-        chat recall
-    </text>
-</svg>
-</div>
+<h1 align="center">chat recall</h1>
 
 Chat Recall turns your personal conversations into a searchable memory. You start by exporting your iMessages to a CSV file through a Python script and uploading it into the app. Once uploaded, the messages are indexed and stored in a database, making it possible to query them naturally. You can ask questions like “What did I say to John about the trip?” or “What was I talking about on October 14th?” and the app will surface the most relevant snippets and provide a concise summary of the answer.
+
+<div align="center">
+<img width="775" height="437" alt="Image" src="https://github.com/user-attachments/assets/4987fb93-3dae-4c5a-bd13-5a6795baefae" />
+</div>
 
 ### How it works
 - You upload a CSV of your messages using the plus button in the main box.
@@ -30,7 +21,7 @@ Chat Recall turns your personal conversations into a searchable memory. You star
 - OpenAI API: Generates embeddings and answers to your questions.
 
 ### Database schema
-Schema is defined in `supabase_schema.sql` and includes:
+Schema is defined in `supabase/schema.sql` and includes:
 - `participants`:
   - `id` (UUID), `handle` (TEXT, unique), `display_name` (TEXT)
 - `threads`:
