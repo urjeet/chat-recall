@@ -88,7 +88,7 @@ Open `http://localhost:3000`.
 
 If you get stuck, check the browser console and the terminal running `npm run dev` for errors.
 
-## Improvements
+## Future Improvements
 
 - **Remote Code Execution**: Enable dynamic query generation and execution for more flexible, context-aware searches beyond keyword matching
 - **Self-Reflection Agent**: Add an observing agent that monitors results and retries with improved context when searches fail
